@@ -1,0 +1,5 @@
+Schedule and deliverable:
+  create basic environment - design initial layout of the restaurant (walls, floors, and ceilings, kitchen environment) -- Friday by 11:59pm (estimate: 1 hr)
+  add basic game objects - tables, chairs, counters, and kitchen appliances -- Saturday by 11:59pm (estimate: 2 hrs)
+  write code for interaction scripts - write scripts to handle interactions between the player and the game objects (e.g., cooking, serving, picking up item, etc.) -- Tuesday by 4:00pm (estimate: 4 hrs)
+  
