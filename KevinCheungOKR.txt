@@ -1,0 +1,6 @@
+Schedule and deliverable:
+ Create new unity project and add basic environment -- Monday by 11:59 pm (estimate: 1 hr)
+ Add a player and movement scripts -- Tuesday by 4pm (estimate: 1 hrs)
+ Add camera movement mechanics to camera-- Tuesday by 6pm (estimate: 1 hr)
+ Add models for burger ingredients -- Friday by 8pm (estimate: 2 hrs)
+ Implement script for character picking up and placing items -- Saturday by 4pm (estimate: 4 hrs)
