@@ -459,37 +459,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1043299292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &373825367
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 373825368}
-  m_Layer: 0
-  m_Name: Food Tray
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &373825368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373825367}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2561934, y: -3.0077014, z: -0.9790446}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &410187205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3361,4 +3330,3 @@ SceneRoots:
   - {fileID: 915760107}
   - {fileID: 410187205}
   - {fileID: 475190000}
-  - {fileID: 373825368}
