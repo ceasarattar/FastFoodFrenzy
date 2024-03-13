@@ -9,7 +9,7 @@ public class Tray : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if the colliding object is a food item
-        if (other.CompareTag("FoodItem"))
+        if (other.CompareTag("Pickable"))
         {
             // Add the food item to the set
             itemsOnTray.Add(other.gameObject.name);
@@ -21,7 +21,7 @@ public class Tray : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Check if the exiting object is a food item
-        if (other.CompareTag("FoodItem") && itemsOnTray.Contains(other.gameObject.name))
+        if (other.CompareTag("Pickable") && itemsOnTray.Contains(other.gameObject.name))
         {
             // Remove the food item from the set
             itemsOnTray.Remove(other.gameObject.name);
@@ -29,10 +29,15 @@ public class Tray : MonoBehaviour
         }
     }
 
-    public bool IsOrderComplete(List<string> currentOrder)
+    public bool IsOrderComplete()
     {
-        // Check if all items in the current order are on the tray
-        foreach (string item in currentOrder)
+        OrderManager orderManager = FindObjectOfType<OrderManager>();
+        if (orderManager.currentOrder == null || orderManager.currentOrder.itemsRequired == null)
+        {
+            return false;
+        }
+
+        foreach (string item in orderManager.currentOrder.itemsRequired)
         {
             if (!itemsOnTray.Contains(item))
             {
@@ -41,4 +46,5 @@ public class Tray : MonoBehaviour
         }
         return true;
     }
+
 }
