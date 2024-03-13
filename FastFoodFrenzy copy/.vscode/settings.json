@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "FastFoodFrenzy.sln"
+    "dotnet.defaultSolution": "FastFoodFrenzy copy.sln"
 }

@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
     private GameObject objectToPickUp = null; // Reference to the object that can be picked up
     private GameObject pickedUpObject = null; // Reference to the currently picked up object, if any
     public TextMeshProUGUI captionText;
-
+ 
     // Update is called once per frame
     void Update()
     {
