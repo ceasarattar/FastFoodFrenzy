@@ -9,6 +9,8 @@ public class Game : MonoBehaviour
 
     public OrderManager orderManager; // Assign in the Inspector
 
+    public Animator characterAnimator;
+
     private float startTime;
     private bool orderActive = true;
     private int orderCount = 0; // Variable to track the number of orders completed
@@ -61,6 +63,8 @@ public class Game : MonoBehaviour
 
         float timeLeft = Mathf.Max(timeForOrder - (Time.time - startTime), 0);
         timerText.text = "Time left: " + timeLeft.ToString("F2");
+
+        characterAnimator.SetBool("IsAngry", timeLeft < 100f);
 
         if (timeLeft <= 0)
         {
