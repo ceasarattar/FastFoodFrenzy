@@ -9,8 +9,11 @@ public class Game : MonoBehaviour
 
     public OrderManager orderManager; // Assign in the Inspector
 
+    public Animator characterAnimator;
+
     private float startTime;
     private bool orderActive = true;
+    private int orderCount = 0; // Variable to track the number of orders completed
 
     void Start()
     {
@@ -28,10 +31,14 @@ public class Game : MonoBehaviour
 
     private void StartNewOrder()
     {
-        orderManager.GenerateRandomOrder();
-        UpdateOrderUI();
-        ResetTimer();
-        orderActive = true;
+        if (orderCount < 2) // Only start a new order if fewer than 2 orders have been completed
+        {
+            orderManager.GenerateRandomOrder();
+            UpdateOrderUI();
+            ResetTimer();
+            ResetRating();
+            orderActive = true;
+        }
     }
 
     private void UpdateOrderUI()
@@ -42,12 +49,22 @@ public class Game : MonoBehaviour
     private void ResetTimer()
     {
         startTime = Time.time;
+        timerText.text = "Time left: " + timeForOrder.ToString("F2"); // Reset timer text to full duration
+    }
+
+    private void ResetRating()
+    {
+        ratingText.text = "Rating: "; // Clear rating text or reset as needed
     }
 
     private void UpdateTimer()
     {
+        if (!orderActive) return;
+
         float timeLeft = Mathf.Max(timeForOrder - (Time.time - startTime), 0);
         timerText.text = "Time left: " + timeLeft.ToString("F2");
+
+        characterAnimator.SetBool("IsAngry", timeLeft < 100f);
 
         if (timeLeft <= 0)
         {
@@ -63,7 +80,18 @@ public class Game : MonoBehaviour
         int rating = CalculateRating(timeTaken);
         ratingText.text = $"Rating: {rating} star(s)";
         orderManager.CompleteOrder();
-        Invoke(nameof(StartNewOrder), 3f);
+        
+        orderCount++; // Increment the number of completed orders
+
+        if (orderCount < 2)
+        {
+            Invoke(nameof(StartNewOrder), 3f); // Only invoke StartNewOrder if fewer than 2 orders have been completed
+        }
+        else
+        {
+            // Optionally, add logic here for what happens when the game is over or no more orders are to be started.
+            Debug.Log("All orders completed. Game over.");
+        }
     }
 
     private int CalculateRating(float timeTaken)

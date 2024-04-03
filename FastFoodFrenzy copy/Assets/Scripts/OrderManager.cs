@@ -7,6 +7,12 @@ public class OrderManager : MonoBehaviour
     public List<Order> ordersQueue = new List<Order>();
     public Order currentOrder;
 
+    public bool HasNextOrder()
+    {
+        return ordersQueue.Count > 0; // True if there are more orders in the queue
+    }   
+
+
     void Start()
     {
         GenerateRandomOrder();
