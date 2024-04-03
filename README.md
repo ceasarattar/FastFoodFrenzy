@@ -13,6 +13,24 @@ Game Pitch Presentation: https://docs.google.com/presentation/d/1RiOO_XcF798fW0o
 - Mecanim Animations: Utilized to animate the door (Ceasar) and NPC (door opens and closes on left click, NPC sitting and waiting for food).
 - NPC AI Construct: Implemented using a Finite State Machine to determine NPC behaviors, including standing idle, transitioning to an angry state when the timer runs low (Kevin), and movement around the dining area (Michelle).
 
+Summary:
+Added dining area with seats and tables
+Updated visuals
+-Added new wall textures
+-Added new prefabs to create restaurant environment
+-Order kiosk, cash register, counters, cookware
+-Added new light sources
+Changed player visuals
+-Chef character
+Changed map layout to add complexity
+Added mecanim to door
+-Animated to open and close on left click
+Added NPC AI construct
+-NPC stands happily, after timer goes below 100 seconds the animation changes to be angry
+-FSM decides what state to be in
+-WIP of NPC movement, walking around the dining area, sitting
+
+
 Future Updates:
 ------------
 - Complete NPC movement implementation, including pathfinding and interaction with the environment.
