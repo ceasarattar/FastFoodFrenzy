@@ -12,9 +12,16 @@ namespace SojaExiles
 		public bool open;
 		public Transform Player;
 
+		public AudioClip openDoorSound;
+        public AudioClip closeDoorSound;
+        private AudioSource audioSource;
+
 		void Start()
 		{
 			open = false;
+			audioSource = gameObject.AddComponent<AudioSource>();
+
+            audioSource.playOnAwake = false;
 		}
 
 		void OnMouseOver()
@@ -56,6 +63,7 @@ namespace SojaExiles
 			print("you are opening the door");
 			openandclose.Play("Opening");
 			open = true;
+			audioSource.PlayOneShot(openDoorSound);
 			yield return new WaitForSeconds(.5f);
 		}
 
@@ -64,6 +72,7 @@ namespace SojaExiles
 			print("you are closing the door");
 			openandclose.Play("Closing");
 			open = false;
+			audioSource.PlayOneShot(closeDoorSound);
 			yield return new WaitForSeconds(.5f);
 		}
 

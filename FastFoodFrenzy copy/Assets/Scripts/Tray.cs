@@ -7,6 +7,20 @@ public class Tray : MonoBehaviour
 
     private HashSet<string> itemsOnTray = new HashSet<string>();
     private List<GameObject> itemsObjects = new List<GameObject>(); // Track the actual GameObjects on the tray
+    public AudioClip placeItemSound;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Initialize the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // Add an AudioSource component if not already attached to the GameObject
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +28,10 @@ public class Tray : MonoBehaviour
         {
             itemsOnTray.Add(other.gameObject.name);
             itemsObjects.Add(other.gameObject); // Add the GameObject to the list
+            if (placeItemSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(placeItemSound);
+            }
             CheckOrderCompletion();
         }
     }
