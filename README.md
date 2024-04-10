@@ -4,7 +4,7 @@ Design Document: https://docs.google.com/document/d/1LEbpRQLCe0r5HXCz9P28s9qdZUO
 
 Game Pitch Presentation: https://docs.google.com/presentation/d/1RiOO_XcF798fW0oohXUHgdEOtb93tYHzK0_BRA0F89M/edit?usp=sharing
 
-4/10 Update:
+4/10/24 Update:
 ---------------------
 
 UI Design:
