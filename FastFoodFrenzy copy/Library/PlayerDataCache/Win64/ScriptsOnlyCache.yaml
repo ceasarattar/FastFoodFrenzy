@@ -554,7 +554,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: eb3a7dc4b5a661b981189235fb2a22a9
+      Hash: 851c037ef5471339e8066d5385000ec0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Tray
@@ -968,7 +968,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: df10a1944994830420f35d639e1830b0
+      Hash: dacda24282f489d009a5e465c5fe5f6a
     assemblyName: Assembly-CSharp
     namespaceName: SojaExiles
     className: opencloseDoor
