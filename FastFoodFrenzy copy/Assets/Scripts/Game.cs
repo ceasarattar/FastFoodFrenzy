@@ -75,6 +75,7 @@ public class Game : MonoBehaviour
 
     public void CompleteOrder()
     {
+        
         orderActive = false;
         float timeTaken = Time.time - startTime;
         int rating = CalculateRating(timeTaken);
@@ -82,6 +83,11 @@ public class Game : MonoBehaviour
         orderManager.CompleteOrder();
         
         orderCount++; // Increment the number of completed orders
+        Tray tray = FindObjectOfType<Tray>(); // Find the Tray object
+        if (tray != null)
+        {
+            tray.ClearItemsOnTray(); // Make sure to clear the tray items
+        }
 
         if (orderCount < 2)
         {

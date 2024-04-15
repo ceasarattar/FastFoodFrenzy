@@ -21,10 +21,21 @@ public class Tray : MonoBehaviour
         }
     }
 
+    private bool canAddItems = true;
+    private bool canProcessNewOrder = true;
+
+    public void ProcessOrderCompletion()
+    {
+        canProcessNewOrder = false;
+        CheckOrderCompletion();
+        ClearItemsOnTray();
+        canProcessNewOrder = true;
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Pickable"))
+        if (other.CompareTag("Pickable") && canAddItems && canProcessNewOrder)
         {
             itemsOnTray.Add(other.gameObject.name);
             itemsObjects.Add(other.gameObject); // Add the GameObject to the list
@@ -42,26 +53,38 @@ public class Tray : MonoBehaviour
         {
             itemsOnTray.Remove(other.gameObject.name);
             itemsObjects.Remove(other.gameObject); // Remove the GameObject from the list
+            Debug.Log("Item removed from tray: " + other.gameObject.name); // Log item removal
         }
     }
 
     private void CheckOrderCompletion()
     {
+        Debug.Log("Checking order completion. Items on tray: " + string.Join(", ", itemsOnTray));
         if (game.orderManager.IsOrderComplete(itemsOnTray))
         {
+            Debug.Log("Order is complete!"); // Log completion success
             game.CompleteOrder();
             ClearItemsOnTray(); // Clear items after order completion
         }
     }
 
     // Method to clear items from the tray visually and logically
-    private void ClearItemsOnTray()
+    public void ClearItemsOnTray()
     {
-        foreach (var item in itemsObjects)
+        canAddItems = false; // Prevent adding new items
+        foreach (GameObject item in itemsObjects)
         {
+            item.SetActive(false); // Disable the GameObject
             Destroy(item); // Remove the GameObject from the scene
         }
         itemsObjects.Clear(); // Clear the list of GameObjects
         itemsOnTray.Clear(); // Clear the set of item names
+        Debug.Log("Tray cleared.");
+        Invoke(nameof(AllowAddingItems), 0.1f);
     }
+
+    private void AllowAddingItems()
+{
+    canAddItems = true;
+}
 }
