@@ -31,7 +31,7 @@ public class Game : MonoBehaviour
 
     private void StartNewOrder()
     {
-        if (orderCount < 2) // Only start a new order if fewer than 2 orders have been completed
+        if (orderCount < 6) // Only start a new order if fewer than 2 orders have been completed
         {
             orderManager.GenerateRandomOrder();
             UpdateOrderUI();
@@ -75,7 +75,7 @@ public class Game : MonoBehaviour
 
     public void CompleteOrder()
     {
-        
+
         orderActive = false;
         float timeTaken = Time.time - startTime;
         int rating = CalculateRating(timeTaken);
@@ -89,7 +89,7 @@ public class Game : MonoBehaviour
             tray.ClearItemsOnTray(); // Make sure to clear the tray items
         }
 
-        if (orderCount < 2)
+        if (orderCount < 6)
         {
             Invoke(nameof(StartNewOrder), 3f); // Only invoke StartNewOrder if fewer than 2 orders have been completed
         }

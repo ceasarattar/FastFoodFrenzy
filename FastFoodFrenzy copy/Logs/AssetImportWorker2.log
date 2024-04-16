@@ -1,23 +1,30 @@
+Unity Editor version:    2022.3.16f1 (d2c21f0ef2f1)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6.2 (Build 21G320)
+Darwin version:          21.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
 Using pre-set license
-Built from '2022.3/staging' branch; Version is '2022.3.16f1 (d2c21f0ef2f1) revision 13812255'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16052 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+Pro License: YES
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/Tripl/projects/FastFoodFrenzy/FastFoodFrenzy copy
+/Users/ceasarattar/Desktop/FastFoodFrenzyClone/FastFoodFrenzy copy
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-54601
-Successfully changed project path to: C:/Users/Tripl/projects/FastFoodFrenzy/FastFoodFrenzy copy
-C:/Users/Tripl/projects/FastFoodFrenzy/FastFoodFrenzy copy
+52344
+Successfully changed project path to: /Users/ceasarattar/Desktop/FastFoodFrenzyClone/FastFoodFrenzy copy
+/Users/ceasarattar/Desktop/FastFoodFrenzyClone/FastFoodFrenzy copy
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,65 +56,64 @@ C:/Users/Tripl/projects/FastFoodFrenzy/FastFoodFrenzy copy
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22552] Host "[IP] 10.0.0.15 [Port] 0 [Flags] 2 [Guid] 1522035631 [EditorId] 1522035631 [Version] 1048832 [Id] WindowsEditor(7,Kevin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4448470400] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 811651122 [EditorId] 811651122 [Version] 1048832 [Id] OSXEditor(0,Ceasars-MBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22552] Host "[IP] 10.0.0.15 [Port] 0 [Flags] 2 [Guid] 1522035631 [EditorId] 1522035631 [Version] 1048832 [Id] WindowsEditor(7,Kevin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4448470400] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 811651122 [EditorId] 811651122 [Version] 1048832 [Id] OSXEditor(0,Ceasars-MBP) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 5.34 ms, found 3 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 9.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Tripl/projects/FastFoodFrenzy/FastFoodFrenzy copy/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/ceasarattar/Desktop/FastFoodFrenzyClone/FastFoodFrenzy copy/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
-    Vendor:   NVIDIA
-    VRAM:     3977 MB
-    Driver:   31.0.15.4626
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003673 seconds.
-- Loaded All Assemblies, in  0.257 seconds
-Native extension for WindowsStandalone target not found
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001805 seconds.
+- Loaded All Assemblies, in  0.309 seconds
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.192 seconds
-Domain Reload Profiling: 449ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.202 seconds
+Domain Reload Profiling: 512ms
+	BeginReloadAssembly (100ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (94ms)
-		LoadAssemblies (88ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (127ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (93ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (82ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (123ms)
+				TypeCache.ScanAssembly (109ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (193ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (203ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (151ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (104ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,601 +121,335 @@ Domain Reload Profiling: 449ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.425 seconds
-Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
+- Loaded All Assemblies, in  0.545 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.395 seconds
-Domain Reload Profiling: 818ms
-	BeginReloadAssembly (103ms)
+- Finished resetting the current domain, in  0.476 seconds
+Domain Reload Profiling: 1022ms
+	BeginReloadAssembly (97ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (262ms)
-		LoadAssemblies (198ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (369ms)
+		LoadAssemblies (220ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (123ms)
-			TypeCache.Refresh (102ms)
-				TypeCache.ScanAssembly (93ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (395ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (151ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (476ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (293ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (228ms)
-			ProcessInitializeOnLoadMethodAttributes (13ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3331 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (1.3 MB). Loaded Objects now: 3787.
-Memory consumption went from 148.9 MB to 147.7 MB.
-Total: 3.696100 ms (FindLiveObjects: 0.263300 ms CreateObjectMapping: 0.084500 ms MarkObjects: 2.861900 ms  DeleteObjects: 0.485000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 484944.718687 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Basic Asset/BS_Texture_map_SE.png
-  artifactKey: Guid(5582ded7245c6074b9e3c52d0ee70c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Basic Asset/BS_Texture_map_SE.png using Guid(5582ded7245c6074b9e3c52d0ee70c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b80346ce0dbb12f7acbf551f1f79394') in 0.067477 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 3.202227 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Burger_01_A.png
-  artifactKey: Guid(6057b8e4c25c6134f984b6b71e867500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Burger_01_A.png using Guid(6057b8e4c25c6134f984b6b71e867500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e30c11af978e4d84086d77da152dca') in 0.023239 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.048749 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/BurgerSign_01_A.png
-  artifactKey: Guid(a2544d6cc2c3d9d41b4287be205161cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/BurgerSign_01_A.png using Guid(a2544d6cc2c3d9d41b4287be205161cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7725a165775caf2ea4035abef96779bb') in 0.020931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 7.320296 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Restroom
-  artifactKey: Guid(9d4ab9777aa50c14fbfac8f939a3ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Restroom using Guid(9d4ab9777aa50c14fbfac8f939a3ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84927a8667875e9a4f7cbd26b79dfba') in 0.000858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.289918 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy
-  artifactKey: Guid(f72c5fb4a441cf0499e2815a06ef852a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy using Guid(f72c5fb4a441cf0499e2815a06ef852a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29029bbfe19d97696bd920026502acc') in 0.000639 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 81.847946 seconds.
-  path: Assets/Material/Metalic Shader.mat
-  artifactKey: Guid(bf058235abc7dcb4d8855b40d1ed940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/Metalic Shader.mat using Guid(bf058235abc7dcb4d8855b40d1ed940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb7150d9e30fd6ab097240ca0818cd1') in 0.072041 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 66.788003 seconds.
-  path: Assets/Prefab/Player.prefab
-  artifactKey: Guid(f495011b21485ac4295e8dfe62039dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Player.prefab using Guid(f495011b21485ac4295e8dfe62039dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3e00ede719bd3a66def4b74724d0a4') in 0.040217 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.814912 seconds.
-  path: Assets/Models/Ch13_nonPBR@Jogging With Box.fbx
-  artifactKey: Guid(6dc44ed9ff188427f84c396d8fe9f0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Ch13_nonPBR@Jogging With Box.fbx using Guid(6dc44ed9ff188427f84c396d8fe9f0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160d47113d3a19a74ace43ae89c67cd9') in 0.006964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Models/Chef.fbx
-  artifactKey: Guid(9f7a3850da44c4e6b9fea971d7ce227e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Chef.fbx using Guid(9f7a3850da44c4e6b9fea971d7ce227e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e131dc7b06001fc929064a44224ec7b') in 0.178278 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 165
-========================================================================
-Received Import Request.
-  Time since last request: 5.726785 seconds.
-  path: Assets/Models/Chef Materials/Ch13_body.mat
-  artifactKey: Guid(5eabdbc4e436646a5b88d70d6bce50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Chef Materials/Ch13_body.mat using Guid(5eabdbc4e436646a5b88d70d6bce50e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd287dcd6b8c680e848365bd24348cebb') in 0.042485 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.538831 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd
-  artifactKey: Guid(eeb54af8ae80d4adca3c86bfe43e519c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd using Guid(eeb54af8ae80d4adca3c86bfe43e519c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee97820ebe92708049b5b743a1748b3') in 0.000497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.342478 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/SilverTrayRd.fbx
-  artifactKey: Guid(25c966c2168db4d2094a91f236a4ab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/SilverTrayRd.fbx using Guid(25c966c2168db4d2094a91f236a4ab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe4adbaf8aa4ef98b40a081b631416f') in 0.037935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 1.314336 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/Images
-  artifactKey: Guid(cbc6a89f147eb426d8d24eedfa4120a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/Images using Guid(cbc6a89f147eb426d8d24eedfa4120a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fbeedc9c9ccf56cf58ae7b5e34098f') in 0.000612 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.390618 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/Materials
-  artifactKey: Guid(62f3d39fb90694dce9e84992844e70cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/Materials using Guid(62f3d39fb90694dce9e84992844e70cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69616e4574c89fb50bc51cea5162b995') in 0.000459 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.278219 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/Materials/SilverTrayRd_D.mat
-  artifactKey: Guid(73f03a147d7124a498a81fb92bb6033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/Materials/SilverTrayRd_D.mat using Guid(73f03a147d7124a498a81fb92bb6033d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49026d203c1ce12704304795e66c9f3') in 0.024172 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.921730 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/Images/SilverTrayRd_D.tif
-  artifactKey: Guid(d62529a148c2d4b3a92af3748a8b726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/Images/SilverTrayRd_D.tif using Guid(d62529a148c2d4b3a92af3748a8b726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1cee91c8ca5d948908d32a7290d43e') in 0.019372 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Dish&Tray/SilverTrayRd/Images/SilverTrayRd_N.tif
-  artifactKey: Guid(3abbd320469a54b468146b336683d50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTrayRd/Images/SilverTrayRd_N.tif using Guid(3abbd320469a54b468146b336683d50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d46c9d8e6e1b8b28f9d76c71681029') in 0.024210 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 63.741326 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/Int_RR_01_A.png
-  artifactKey: Guid(9ec16e8e97fefce479fe70e0e7115274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/Int_RR_01_A.png using Guid(9ec16e8e97fefce479fe70e0e7115274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd183056b5d7381d0899b279878362fa') in 0.023887 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/RR_Restroom_Sign.png
-  artifactKey: Guid(8521850fc227afa4fb73de6489100edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/RR_Restroom_Sign.png using Guid(8521850fc227afa4fb73de6489100edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e3d24a0d9bbc9ee864d06772b80d48') in 0.022581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/RR_RestroomPaper_A.png
-  artifactKey: Guid(00368d3a4678ecd4cb2b95551bfe744e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Restroom/RR_RestroomPaper_A.png using Guid(00368d3a4678ecd4cb2b95551bfe744e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e2ad0062d3596962c9ba0eddb8dd9a') in 0.027194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 14.049464 seconds.
-  path: Assets/Models/Chef Textures/Ch13_1001_Diffuse.png
-  artifactKey: Guid(c9ccee939d8ca44428c3a910ebb10fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Chef Textures/Ch13_1001_Diffuse.png using Guid(c9ccee939d8ca44428c3a910ebb10fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04377fb09e3c7dcd9cf64fd8ba827e3') in 0.021731 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.018672 seconds.
-  path: Assets/Models/Chef Textures/Ch13_1001_Normal.png
-  artifactKey: Guid(56c45bdf9f084434cbefaf62c9988fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Chef Textures/Ch13_1001_Normal.png using Guid(56c45bdf9f084434cbefaf62c9988fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a2a68f49af7153643e8176382c0ad2') in 0.020148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001289 seconds.
-  path: Assets/Models/Chef Textures/Ch13_1002_Diffuse.png
-  artifactKey: Guid(2b86b3d3c9a1f4daa9d74b372a01b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Chef Textures/Ch13_1002_Diffuse.png using Guid(2b86b3d3c9a1f4daa9d74b372a01b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edb53f0237b4fe3eecf0d9519594786') in 0.022273 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.412898 seconds.
-  path: Assets/Dish&Tray/CubeMap/Cube_Corridor_B.tif
-  artifactKey: Guid(61935ac855c46497cb550390a9012333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/CubeMap/Cube_Corridor_B.tif using Guid(61935ac855c46497cb550390a9012333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c2f0ab4ef349ddaaa40c4b8354b551') in 0.021304 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.021826 seconds.
-  path: Assets/Dish&Tray/CubeMap/Cube_Corridor_F.tif
-  artifactKey: Guid(9de7b46186cfd42159945f9d4ef9ea76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/CubeMap/Cube_Corridor_F.tif using Guid(9de7b46186cfd42159945f9d4ef9ea76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552e8439dbd98965c6bfefa567ff6f69') in 0.017417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.019364 seconds.
-  path: Assets/Dish&Tray/CubeMap/Cube_Corridor_T.tif
-  artifactKey: Guid(394baf857ba1a4ad1a8c0a65d3042737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/CubeMap/Cube_Corridor_T.tif using Guid(394baf857ba1a4ad1a8c0a65d3042737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac3f3a602166a0dd4fe50b755c76d30') in 0.016069 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.427829 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Drink_01_A.png
-  artifactKey: Guid(86f2774507219194b82814d0ce889ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Drink_01_A.png using Guid(86f2774507219194b82814d0ce889ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c55a15904c6efdb2fea18c4138bf73') in 0.019059 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.520271 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_DrinkIcon.png
-  artifactKey: Guid(38781c420bfc76b4694b7017c246d302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_DrinkIcon.png using Guid(38781c420bfc76b4694b7017c246d302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3b799b680520f1dce58e4157d25922') in 0.023085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.377594 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Kiosk screen.png
-  artifactKey: Guid(6d1adc68a39faca41a74c7f1348b077a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Kiosk screen.png using Guid(6d1adc68a39faca41a74c7f1348b077a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61631f73b0609881dc5e9c63fd9516f') in 0.023298 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.142786 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_LampGrate_N.png
-  artifactKey: Guid(3e7c5da5705f8914781f77218da8d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_LampGrate_N.png using Guid(3e7c5da5705f8914781f77218da8d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9fa5f8171770df94ccacc3d88696b9') in 0.027321 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.041230 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_leather_N.png
-  artifactKey: Guid(44ec651f3bd017f46b847e17aabd2d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_leather_N.png using Guid(44ec651f3bd017f46b847e17aabd2d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7116fb30ba2d3da0dd45d46bedc9db84') in 0.020802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.097243 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_RoughMetal_01_A.png
-  artifactKey: Guid(9693cf230503f694ea72fbf70b0940a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_RoughMetal_01_A.png using Guid(9693cf230503f694ea72fbf70b0940a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07deeb21f6c0ffcfd433f9ed9d0e217a') in 0.022935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.095274 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_RoughMetal_01_N.png
-  artifactKey: Guid(5a2c370255776694db01af89fcd9b4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_RoughMetal_01_N.png using Guid(5a2c370255776694db01af89fcd9b4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37c9480b7f23a29e7f259537ddb4db5') in 0.025275 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.019536 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_ServicePlate_01_A.png
-  artifactKey: Guid(ca0356835f5fce648828a00d44e29d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_ServicePlate_01_A.png using Guid(ca0356835f5fce648828a00d44e29d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d490b137b660d83a2cd447cd69fa28d') in 0.016715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005506 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Stone_01_N.png
-  artifactKey: Guid(d0f5751404e0ad44ebdb7b78d7ada947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Stone_01_N.png using Guid(d0f5751404e0ad44ebdb7b78d7ada947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a54e0f33a7b9c305533980ad0e71e7') in 0.022257 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.017606 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_01_N.png
-  artifactKey: Guid(0fc735b993adf4d41a1715cf5a12926d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_01_N.png using Guid(0fc735b993adf4d41a1715cf5a12926d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f234c0d3696b61ed68dd1eecd3f4d2') in 0.017193 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_02_A.png
-  artifactKey: Guid(ba12d857265e4cf43a25eb058fc77c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_02_A.png using Guid(ba12d857265e4cf43a25eb058fc77c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd337daff0bb2ab4c87c5cdaa3b724d9c') in 0.017038 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.030679 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_02_N.png
-  artifactKey: Guid(bdcbb6abf97582341b59fdc6ce130227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/FFK_Wood_02_N.png using Guid(bdcbb6abf97582341b59fdc6ce130227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0191d59b2b5ba459f1d34cd43a635e9a') in 0.016886 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.055607 seconds.
-  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Fire/Fire_Texture_02.tga
-  artifactKey: Guid(c8b0b917072902c4f90273607a87d9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Textures/Fire/Fire_Texture_02.tga using Guid(c8b0b917072902c4f90273607a87d9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e740a41cc415dc391a3578809ff0d05a') in 0.011732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.219906 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Fried_01_A.png
-  artifactKey: Guid(e9e6632402ad7e942a833c223a9c22ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Fried_01_A.png using Guid(e9e6632402ad7e942a833c223a9c22ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d3851b17f9e32f7ee6f7ae33f4c360') in 0.018815 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.033991 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Fried_01_N.png
-  artifactKey: Guid(4e77517ca4e632743bae541a7179a18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Fried_01_N.png using Guid(4e77517ca4e632743bae541a7179a18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801c2d5f7d9c7e7f77587a653837bf99') in 0.020189 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 11.875890 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Ketchup_01_A.png
-  artifactKey: Guid(1f76e08dad542b845b4315d427847aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Ketchup_01_A.png using Guid(1f76e08dad542b845b4315d427847aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e437eecaa483e4d34fda704bb319e1de') in 0.018567 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Characters/Texture/Remy_Body_Diffuse.png
-  artifactKey: Guid(4e2853db4c0fb554ab2175de59c5c23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Body_Diffuse.png using Guid(4e2853db4c0fb554ab2175de59c5c23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cd27bdef3cb9538a024580848b053e') in 0.020263 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Characters/Texture/Remy_Body_Gloss.png
-  artifactKey: Guid(2a7c2a2b3b6e00a4381e9c3fe1d2175a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Body_Gloss.png using Guid(2a7c2a2b3b6e00a4381e9c3fe1d2175a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3ce58193602217092b51d3bf4d1537') in 0.021560 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001870 seconds.
-  path: Assets/Characters/Texture/Remy_Body_Opacity.png
-  artifactKey: Guid(368c620cf1de6734aab70adeb0e6338b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Body_Opacity.png using Guid(368c620cf1de6734aab70adeb0e6338b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e3bc817f38712b0f8e76bea64dee7a') in 0.020189 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Characters/Texture/Remy_Bottom_Diffuse.png
-  artifactKey: Guid(1178666518f932c499bb28e2ddba9f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Bottom_Diffuse.png using Guid(1178666518f932c499bb28e2ddba9f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c95f3c1f084a826b43f0a864ac9ed91') in 0.017377 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Characters/Texture/Remy_Bottom_Normal.png
-  artifactKey: Guid(9f31044df2bcdfe45a88ccd7f79ed51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Bottom_Normal.png using Guid(9f31044df2bcdfe45a88ccd7f79ed51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78484435862d8adecc1eb75f7c415d0') in 0.018707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.014667 seconds.
-  path: Assets/Characters/Texture/Remy_Bottom_Specular.png
-  artifactKey: Guid(c009ab465e52a76479f87771f36ba9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Bottom_Specular.png using Guid(c009ab465e52a76479f87771f36ba9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c20c58322c131cb76358fde91da0e44') in 0.018190 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002882 seconds.
-  path: Assets/Characters/Texture/Remy_Hair_Gloss.png
-  artifactKey: Guid(89be38a447714f043ac00acb859c1e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Hair_Gloss.png using Guid(89be38a447714f043ac00acb859c1e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462f87ed61ece494962c9c373adb299c') in 0.018045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002517 seconds.
-  path: Assets/Characters/Texture/Remy_Hair_Opacity.png
-  artifactKey: Guid(95474ee3c4594064a9d6102c2ff0317e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Hair_Opacity.png using Guid(95474ee3c4594064a9d6102c2ff0317e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c857433ab644990f0d0d470bc7619ab7') in 0.018375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.004622 seconds.
-  path: Assets/Characters/Texture/Remy_Shoes_Diffuse.png
-  artifactKey: Guid(277b8dd86f5c0cb4185ec4f510af4b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Shoes_Diffuse.png using Guid(277b8dd86f5c0cb4185ec4f510af4b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1543a4cd2f47148bc6f3e738136eef01') in 0.016863 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.004378 seconds.
-  path: Assets/Characters/Texture/Remy_Shoes_Normal.png
-  artifactKey: Guid(71c5be1625e4908438cce0832b70305c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Shoes_Normal.png using Guid(71c5be1625e4908438cce0832b70305c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9308caa9c835921c36c11efe5b18f2b7') in 0.016825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.050084 seconds.
-  path: Assets/Characters/Texture/Remy_Top_Diffuse.png
-  artifactKey: Guid(7075101ac6b925f439ba56fef9bafae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Top_Diffuse.png using Guid(7075101ac6b925f439ba56fef9bafae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9173d5e618d4e0982530452f93d6f7') in 0.016519 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.248025 seconds.
-  path: Assets/Characters/Texture/Remy_Top_Normal.png
-  artifactKey: Guid(681ba1c0c86bfd948b2a19137e880f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Texture/Remy_Top_Normal.png using Guid(681ba1c0c86bfd948b2a19137e880f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be7bd2a409133ad56e065f891cabd5d') in 0.019752 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.036868 seconds.
-  path: Assets/Dish&Tray/SilverTraySq/Images/SilverTraySq_D.tif
-  artifactKey: Guid(6aabd8421e0ad481d9f4b5a91a6690e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dish&Tray/SilverTraySq/Images/SilverTraySq_D.tif using Guid(6aabd8421e0ad481d9f4b5a91a6690e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393c45bc11e5ebfc5ee88e9afe76e1bb') in 0.019935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Food Pack-Demo/Texture/Texture.png
-  artifactKey: Guid(59d7934043ff72648a863aeb0aecd606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Food Pack-Demo/Texture/Texture.png using Guid(59d7934043ff72648a863aeb0aecd606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab10e329ecb696d39fe504ed9b9cdf5') in 0.015876 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.196429 seconds.
-  path: Assets/Alstrainfinite/KitchenAppliances/Textures/Texture.png
-  artifactKey: Guid(9a1a78cd418cf1747abdb83401565c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Textures/Texture.png using Guid(9a1a78cd418cf1747abdb83401565c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5081a1fc37160c0f665dab133c4e4c') in 0.016417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.079276 seconds.
-  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Tray_01_N.png
-  artifactKey: Guid(3882e4dd404eddd418f606eaac8fa225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Textures/Tray_01_N.png using Guid(3882e4dd404eddd418f606eaac8fa225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63829eaee35c793f8c30dff666b03b7d') in 0.020250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.364 seconds
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.626 seconds
-Domain Reload Profiling: 989ms
-	BeginReloadAssembly (140ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (162ms)
-		LoadAssemblies (232ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (626ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (323ms)
+		SetupLoadedEditorAssemblies (339ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (3ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.22 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3279 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 3842.
-Memory consumption went from 145.4 MB to 144.2 MB.
-Total: 2.255500 ms (FindLiveObjects: 0.192900 ms CreateObjectMapping: 0.087100 ms MarkObjects: 1.808200 ms  DeleteObjects: 0.166200 ms)
+Unloading 3332 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 45 unused Assets / (1.3 MB). Loaded Objects now: 3788.
+Memory consumption went from 264.2 MB to 262.9 MB.
+Total: 2.908000 ms (FindLiveObjects: 0.119417 ms CreateObjectMapping: 0.041167 ms MarkObjects: 2.489417 ms  DeleteObjects: 0.257375 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 719210.584893 seconds.
+  path: Assets/Food Pack-Demo/Texture/Texture.png
+  artifactKey: Guid(59d7934043ff72648a863aeb0aecd606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Texture/Texture.png using Guid(59d7934043ff72648a863aeb0aecd606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc3633ebd5a6dd47258051865952a71') in 0.066344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 135.280712 seconds.
+  path: Assets/Food Pack-Demo/Texture
+  artifactKey: Guid(3dcaeb506cf17b8498f3ceb803075b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Texture using Guid(3dcaeb506cf17b8498f3ceb803075b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc0919a8e6bc2afa802829708fd26b1') in 0.000772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 111.031390 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Bell pepper green.fbx
+  artifactKey: Guid(b2bd321d9d4d86f4abfd6229b2605d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Bell pepper green.fbx using Guid(b2bd321d9d4d86f4abfd6229b2605d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959e47e38125d4ed5571408c42d77f89') in 0.215994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002458 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Bundt Cake.fbx
+  artifactKey: Guid(323aa9268390ee048920630e3337dc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Bundt Cake.fbx using Guid(323aa9268390ee048920630e3337dc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c08e3d7cd96bac643dea3af74089ee') in 0.014060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Lamb Chop Cooked.fbx
+  artifactKey: Guid(c4a3d4e77dd5fb345b4d5f6e97b15cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Lamb Chop Cooked.fbx using Guid(c4a3d4e77dd5fb345b4d5f6e97b15cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b106358e24fa800fcd8c1760e5f2ce') in 0.016188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Melon.fbx
+  artifactKey: Guid(b648bf4121327d14d8aec7a994b806e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Melon.fbx using Guid(b648bf4121327d14d8aec7a994b806e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd9e0a7e67133d1177a3d3979b1df4b') in 0.010475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002206 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Tomato Quarter.fbx
+  artifactKey: Guid(f7eb075f2b7036e469890be4efa0c8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Tomato Quarter.fbx using Guid(f7eb075f2b7036e469890be4efa0c8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458baa883d0cba2f929b28eb5e244b8e') in 0.018011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002423 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Wasabi.fbx
+  artifactKey: Guid(77c404ad8e2bebb4e94af41133adb8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Wasabi.fbx using Guid(77c404ad8e2bebb4e94af41133adb8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0443fc01bf3a4cf4b3b7811dfb42912') in 0.027110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.008612 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Cookies.fbx
+  artifactKey: Guid(de25594e1cb8efe459c8e2967beff6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Cookies.fbx using Guid(de25594e1cb8efe459c8e2967beff6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b8f88301531d37826ab4ac333204a2') in 0.017285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Salmon fillet.fbx
+  artifactKey: Guid(3e17c9b798a1ba24ba65181584d06ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Salmon fillet.fbx using Guid(3e17c9b798a1ba24ba65181584d06ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891a8b050cffceb64e816a1a4011e1a6') in 0.011147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Tomato Half.fbx
+  artifactKey: Guid(c3efed6caca157b498300aade43994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Tomato Half.fbx using Guid(c3efed6caca157b498300aade43994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4794741880d41e6968d2d65cfffcc77d') in 0.012333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.003201 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Soda can C.fbx
+  artifactKey: Guid(d6c698db7cb0ec24fb918fe80eec208d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Soda can C.fbx using Guid(d6c698db7cb0ec24fb918fe80eec208d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f758a190594dcd8cafeccfbf6db58e') in 0.011656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.075481 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Melon half.fbx
+  artifactKey: Guid(213c5fc6d0f35ad40961a09b076dfcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Melon half.fbx using Guid(213c5fc6d0f35ad40961a09b076dfcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45685e0600bde58613f3eb74845db34') in 0.016348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000692 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Pretzel.fbx
+  artifactKey: Guid(6518c43883174f6499223d97acee02aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Pretzel.fbx using Guid(6518c43883174f6499223d97acee02aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfedb470b45c3b163a373273a7e88089') in 0.012916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Salmon.fbx
+  artifactKey: Guid(a9b2fe35a167c904693b59a94f5d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Salmon.fbx using Guid(a9b2fe35a167c904693b59a94f5d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ea8ceaa28aac515f693510b43d8f82') in 0.014934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Ketchup Plastic Bottle.fbx
+  artifactKey: Guid(1b1f25b6ff8d25a4f8a6f4ba7363f755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Ketchup Plastic Bottle.fbx using Guid(1b1f25b6ff8d25a4f8a6f4ba7363f755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0336eb81878fdef7b4d05f6561712809') in 0.050589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.008338 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Lamb Chop.fbx
+  artifactKey: Guid(3d67b34b3f03a1a46917d0afe3b6eef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Lamb Chop.fbx using Guid(3d67b34b3f03a1a46917d0afe3b6eef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61afd8299bc3e4c8b6d4963832e87491') in 0.010801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.004496 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Pizza Margarita cut.fbx
+  artifactKey: Guid(528f6169f14efe54fa344f0478f8f534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Pizza Margarita cut.fbx using Guid(528f6169f14efe54fa344f0478f8f534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704f77953946a790140c0021d3f4b025') in 0.018671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001016 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Unagi.fbx
+  artifactKey: Guid(85ec0bf98339b9a408044de2cae26e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Unagi.fbx using Guid(85ec0bf98339b9a408044de2cae26e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a9897d064b635da650e5b93e047096') in 0.013620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Peach slice.fbx
+  artifactKey: Guid(38373e16bfc1c5a4085a26440a7a0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Peach slice.fbx using Guid(38373e16bfc1c5a4085a26440a7a0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571223b880d45ae990090c813de564df') in 0.013733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000514 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Sake cup C.fbx
+  artifactKey: Guid(6430ec2e0c912a24ea107f474c0d1b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Sake cup C.fbx using Guid(6430ec2e0c912a24ea107f474c0d1b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e59c6178f3fb55d0565ce485516bd52') in 0.010361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Salmon skeleton.fbx
+  artifactKey: Guid(a0aa35e84168d8041b1be4b0c0a346ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Salmon skeleton.fbx using Guid(a0aa35e84168d8041b1be4b0c0a346ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00168c5e2cc50cc1b17975b27fb00636') in 0.012416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000960 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Salami cut A.fbx
+  artifactKey: Guid(601422f08d730974ba9474adf89a2fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Salami cut A.fbx using Guid(601422f08d730974ba9474adf89a2fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3226cc960df7ba303f7d88797b227ffb') in 0.018279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001231 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Udon.fbx
+  artifactKey: Guid(cffb8a2c466fd914ba032f71bee9c81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Udon.fbx using Guid(cffb8a2c466fd914ba032f71bee9c81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994e3ea26198689d6c8947efaff6eb9c') in 0.025431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000861 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Bundt Cake cut.fbx
+  artifactKey: Guid(1da8cd687b7cd2c4aa96694efbefc8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Bundt Cake cut.fbx using Guid(1da8cd687b7cd2c4aa96694efbefc8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1156bf4dfaf3c7543a69a2d833e189e6') in 0.022999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001563 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Doughnut D.fbx
+  artifactKey: Guid(1339464f1b5371e4787d4d9939f274df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Doughnut D.fbx using Guid(1339464f1b5371e4787d4d9939f274df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa748b5b84bd8cf45463c381421caa2') in 0.019820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/Food Pack-Demo/Mesh/Salmon plastic tray.fbx
+  artifactKey: Guid(f6e08a9d2b0575a4cbbddc5337169178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Mesh/Salmon plastic tray.fbx using Guid(f6e08a9d2b0575a4cbbddc5337169178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c102739ee4577a9c59a1083441a9e0b3') in 0.020771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 1.069136 seconds.
+  path: Assets/Food Pack-Demo/Materials/Glass.mat
+  artifactKey: Guid(b133b755a13992d4e820112f19c845cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Food Pack-Demo/Materials/Glass.mat using Guid(b133b755a13992d4e820112f19c845cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba56a134f37b3ad2b44e45cbe095d7b2') in 0.062380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.459983 seconds.
+  path: Assets/Material/DisplacementMap.png
+  artifactKey: Guid(4fd45fc00f77948d28e8da2bd7c4fa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/DisplacementMap.png using Guid(4fd45fc00f77948d28e8da2bd7c4fa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9009a1eff708544218db417b19c9b0e') in 0.022992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.559649 seconds.
+  path: Assets/Material/DisplacementMap.png
+  artifactKey: Guid(4fd45fc00f77948d28e8da2bd7c4fa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/DisplacementMap.png using Guid(4fd45fc00f77948d28e8da2bd7c4fa35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3351e8c955ef854a7e216782347b247d') in 0.010826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 78.570981 seconds.
+  path: Assets/Sounds/09_thud0.wav
+  artifactKey: Guid(a03dde1424103c44d98b816813a89854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/09_thud0.wav using Guid(a03dde1424103c44d98b816813a89854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4ea74b527ff17783017a07ea580395') in 0.075329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Sounds/Drs_MetalDoor_Close_01.wav
+  artifactKey: Guid(d7f59595aa88d4148b306f5e4a1b5096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Drs_MetalDoor_Close_01.wav using Guid(d7f59595aa88d4148b306f5e4a1b5096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8545c24c70d1f5b25789d2fc73ae97') in 0.018209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003068 seconds.
+  path: Assets/Sounds/30_spoon_hitting_saucepan1.wav
+  artifactKey: Guid(1083cf3654171e244808545ce803197a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/30_spoon_hitting_saucepan1.wav using Guid(1083cf3654171e244808545ce803197a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce23068d654af04e2278ee001820203') in 0.012204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
 AssetImportWorker is now disconnected from the server
 Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

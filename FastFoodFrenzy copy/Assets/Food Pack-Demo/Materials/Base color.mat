@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Base color
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 000c412a080fb4404850f06e920d06c5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _GLOSSYREFLECTIONS_OFF
+  m_ValidKeywords: []
   m_InvalidKeywords:
+  - _GLOSSYREFLECTIONS_OFF
   - _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

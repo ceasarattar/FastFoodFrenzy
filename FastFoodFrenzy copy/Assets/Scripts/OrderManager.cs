@@ -36,7 +36,8 @@ public class OrderManager : MonoBehaviour
 
     public void GenerateRandomOrder()
     {
-        int numItems = UnityEngine.Random.Range(1, possibleOrderItems.Count + 1); // Random number of items
+        // int numItems = UnityEngine.Random.Range(1, possibleOrderItems.Count + 1); // Random number of items
+        int numItems = 1;
         List<string> randomItems = new List<string>();
 
         List<string> shuffledItems = new List<string>(possibleOrderItems);
@@ -82,6 +83,8 @@ public class OrderManager : MonoBehaviour
 
     public bool IsOrderComplete(HashSet<string> itemsOnTray)
     {
+        Debug.Log("Current Order: " + currentOrder);
+        Debug.Log("Current Order Items: " + currentOrder.itemsRequired);
     // Early return if currentOrder is not set or if the counts don't match.
         if (currentOrder == null || currentOrder.itemsRequired == null || itemsOnTray.Count != currentOrder.itemsRequired.Count)
         {

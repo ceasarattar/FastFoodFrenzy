@@ -1,48 +1,46 @@
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Scripting.APIUpdating;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public Animator animator; // Add a reference to the Animator component
+    public Animator animator; // Reference to the Animator component
     public float speed = 12f;
-    public float runMultiplier = 1.5f; // Multiplier for running speed
+    public float crouchSpeedMultiplier = 0.5f; // Speed when crouching
+    public KeyCode crouchKey = KeyCode.C; // Key to crouch
     public float gravity = -9.81f;
-    public float standingHeight = 2.0f;
-    public KeyCode runKey = KeyCode.LeftShift; // Key to run
+    public float crouchHeight = 0.5f; // Adjust if necessary
+    public float standingHeight = 2.0f; // Adjust if necessary
 
     private Vector3 velocity;
-    private bool isRunning = false;
+    private bool isCrouching = false;
 
     void Update()
     {
-        // Check if the run key is held down
-        isRunning = Input.GetKey(runKey);
-
-        // Movement
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        
-        // Determine if the player is moving forward or backward
-        bool isMovingBackward = z < 0;
-        
-        Vector3 move = transform.right * x + transform.forward * z;
-        float currentSpeed = speed;
-        if (isRunning)
+        // Check for crouch input
+        if (Input.GetKeyDown(crouchKey))
         {
-            currentSpeed *= runMultiplier;
+            isCrouching = !isCrouching;
+            // Optionally, smoothly transition height if necessary
+            controller.height = isCrouching ? crouchHeight : standingHeight;
         }
         
-        controller.Move(move * currentSpeed * Time.deltaTime);
+        // Movement input
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        // Calculate adjusted speed and movement direction
+        float adjustedSpeed = isCrouching ? speed * crouchSpeedMultiplier : speed;
+        Vector3 move = transform.right * x + transform.forward * z;
+
+        // Apply movement
+        controller.Move(move * adjustedSpeed * Time.deltaTime);
 
         // Set the Animator parameters
-        animator.SetFloat("Speed", Mathf.Abs(z));
-        animator.SetBool("IsMovingBackward", isMovingBackward);
-        animator.SetBool("IsRunning", isRunning);
+        animator.SetFloat("Speed", isCrouching ? move.magnitude * crouchSpeedMultiplier : move.magnitude);
+        animator.SetBool("IsCrouching", isCrouching);
 
-        // Gravity
+        // Apply gravity
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime); // Apply gravity
+        controller.Move(velocity * Time.deltaTime);
     } 
 }
