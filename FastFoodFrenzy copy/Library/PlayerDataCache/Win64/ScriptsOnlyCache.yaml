@@ -3,11 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Game
     - LookAround
+    - MenuActions
     - OrderManager
     - PickUp
     - PlayerMovement
     - SojaExiles.opencloseDoor
     - Tray
+    - UIManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -24,8 +26,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -34,6 +38,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -56,15 +61,28 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuActions
+    methodName: LoadMainScene
+  - assembly: Assembly-CSharp
+    fullTypeName: UIManager
+    methodName: ShowInstructions
   sceneClasses:
     Assets/Scenes/Demo.unity:
     - Class: 1
@@ -84,8 +102,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -114,39 +130,33 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1658}
+      Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1674}
     - Class: 114
-      Script: {instanceID: 2182}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2282}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 5268}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 6010}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 6334}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 8444}
     - Class: 114
-      Script: {instanceID: 3920}
+      Script: {instanceID: 8448}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 8464}
     - Class: 114
-      Script: {instanceID: 4548}
+      Script: {instanceID: 8480}
     - Class: 114
-      Script: {instanceID: 4768}
+      Script: {instanceID: 8498}
     - Class: 114
-      Script: {instanceID: 5274}
-    - Class: 114
-      Script: {instanceID: 6016}
-    - Class: 114
-      Script: {instanceID: 6344}
-    - Class: 114
-      Script: {instanceID: 6634}
+      Script: {instanceID: 8502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,7 +177,88 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/StartScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1632}
+    - Class: 114
+      Script: {instanceID: 1674}
+    - Class: 114
+      Script: {instanceID: 2292}
+    - Class: 114
+      Script: {instanceID: 2736}
+    - Class: 114
+      Script: {instanceID: 2944}
+    - Class: 114
+      Script: {instanceID: 3256}
+    - Class: 114
+      Script: {instanceID: 4288}
+    - Class: 114
+      Script: {instanceID: 4546}
+    - Class: 114
+      Script: {instanceID: 5268}
+    - Class: 114
+      Script: {instanceID: 6010}
+    - Class: 114
+      Script: {instanceID: 6334}
+    - Class: 114
+      Script: {instanceID: 37470}
+    - Class: 114
+      Script: {instanceID: 54052}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 6e5a3fa89f44c2a2470e517a2c798f7c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PickUp
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -186,12 +277,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: b1d8569a60a1ab5e698086574a27adc7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: OrderManager
   - hash:
       serializedVersion: 2
       Hash: f45600bcc886206dd55a3208474aad61
@@ -218,12 +303,6 @@ ScriptsOnlyBuild:
     className: Grain
   - hash:
       serializedVersion: 2
-      Hash: d9645fa26aa13aa688456533b7517e27
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
       Hash: 00bbd9db8634496d079d17711b2ff7c4
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -246,12 +325,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 188aff1432a6d8fbc153e708cbd4a549
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerMovement
   - hash:
       serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
@@ -296,34 +369,16 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 6426b56b0a9755d7dd5eb60f806cda66
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Game
-  - hash:
-      serializedVersion: 2
       Hash: ff086b2fc4609f8b094e7c0435c6db0a
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
-      Hash: f205580a439b918a2b734a030426592d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LookAround
-  - hash:
-      serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 4d316ce55ea05ff8f78d0f090b9f3ea7
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: Drawer_Pull_X
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
@@ -554,22 +609,10 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 851c037ef5471339e8066d5385000ec0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Tray
-  - hash:
-      serializedVersion: 2
       Hash: 552dca338f20933ce362ebbe559a6aa6
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 0449101d771888692f2993bd3e389f33
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseStallDoor
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -680,12 +723,6 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6e5a3fa89f44c2a2470e517a2c798f7c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PickUp
-  - hash:
-      serializedVersion: 2
       Hash: ffaaa6b08bc8a8928411e8e402432358
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -786,12 +823,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Slider
-  - hash:
-      serializedVersion: 2
-      Hash: 358cc50028339de2de237524c7302ef6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: StartGame
   - hash:
       serializedVersion: 2
       Hash: 33f160a5c07e580c29aba2bd1e4db811
@@ -896,18 +927,6 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 046932adc0de143c5ddaaa4a1e293f6d
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: Drawer_Pull_Z
-  - hash:
-      serializedVersion: 2
-      Hash: ca3032cf4ebe95d9bb6bf2e5e6806e45
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: SceneSwitchGen
-  - hash:
-      serializedVersion: 2
       Hash: 8e0fc96fa85d5f45718225025b01474d
     assemblyName: Unity.ProGrids
     namespaceName: UnityEngine.ProGrids
@@ -968,18 +987,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: dacda24282f489d009a5e465c5fe5f6a
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseDoor
-  - hash:
-      serializedVersion: 2
-      Hash: 505d965474035e3a2e4c4ba620b70af9
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: MouseLook
-  - hash:
-      serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1014,12 +1021,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e8df140ae2e0915eaa0f9ddc350d2d30
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseWindow
   - hash:
       serializedVersion: 2
       Hash: d2ecd94550edf1b56aff07b1f4e41c57
@@ -1118,12 +1119,6 @@ ScriptsOnlyBuild:
     className: PostProcessProfile
   - hash:
       serializedVersion: 2
-      Hash: d407e506880bc6e8c68f0500aad53d51
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseDoor1
-  - hash:
-      serializedVersion: 2
       Hash: 429ce0b58f9d2275bbc4ed740bee78ec
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -1184,12 +1179,6 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 62f989901668a958ef4abecb426ef105
-    assemblyName: Assembly-CSharp
-    namespaceName: SojaExiles
-    className: opencloseWindow1
-  - hash:
-      serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1224,7 +1213,110 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4d316ce55ea05ff8f78d0f090b9f3ea7
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: Drawer_Pull_X
+  - hash:
+      serializedVersion: 2
+      Hash: e8df140ae2e0915eaa0f9ddc350d2d30
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseWindow
+  - hash:
+      serializedVersion: 2
+      Hash: b1d8569a60a1ab5e698086574a27adc7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OrderManager
+  - hash:
+      serializedVersion: 2
+      Hash: 247003c5fa33475402c5fa378b491b39
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: ca3032cf4ebe95d9bb6bf2e5e6806e45
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: SceneSwitchGen
+  - hash:
+      serializedVersion: 2
+      Hash: 0449101d771888692f2993bd3e389f33
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseStallDoor
+  - hash:
+      serializedVersion: 2
+      Hash: 851c037ef5471339e8066d5385000ec0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Tray
+  - hash:
+      serializedVersion: 2
+      Hash: 505d965474035e3a2e4c4ba620b70af9
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: MouseLook
+  - hash:
+      serializedVersion: 2
+      Hash: 046932adc0de143c5ddaaa4a1e293f6d
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: Drawer_Pull_Z
+  - hash:
+      serializedVersion: 2
+      Hash: 6426b56b0a9755d7dd5eb60f806cda66
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Game
+  - hash:
+      serializedVersion: 2
+      Hash: d9645fa26aa13aa688456533b7517e27
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 62f989901668a958ef4abecb426ef105
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseWindow1
+  - hash:
+      serializedVersion: 2
+      Hash: d407e506880bc6e8c68f0500aad53d51
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseDoor1
+  - hash:
+      serializedVersion: 2
+      Hash: f205580a439b918a2b734a030426592d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LookAround
+  - hash:
+      serializedVersion: 2
+      Hash: dacda24282f489d009a5e465c5fe5f6a
+    assemblyName: Assembly-CSharp
+    namespaceName: SojaExiles
+    className: opencloseDoor
+  - hash:
+      serializedVersion: 2
+      Hash: 134dbb2bde17199f9a157fa51ae83cf5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuActions
+  - hash:
+      serializedVersion: 2
+      Hash: 9921dcabcb658ee6f80422a07705abff
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UIManager
   platform: 19
   scenePathNames:
+  - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/Demo.unity
-  playerPath: C:/Users/Tripl/OneDrive/Desktop/Test/FastFoodFrenzy.exe
+  playerPath: C:/Users/Tripl/OneDrive/Desktop/Build/FastFoodFrenzy.exe

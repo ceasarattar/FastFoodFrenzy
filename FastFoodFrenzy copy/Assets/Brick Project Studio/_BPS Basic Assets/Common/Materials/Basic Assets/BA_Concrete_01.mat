@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BA_Concrete_01
-  m_Shader: {fileID: 4800000, guid: a585149a6b99f6e4dbf4e79a164d4eb4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4c703f70d8ba0f24c9ba1b9ab9a5afd5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -83,8 +83,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.7686275, g: 0.7372549, b: 0.7019608, a: 1}
+    - _EmissionColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 0.2}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
