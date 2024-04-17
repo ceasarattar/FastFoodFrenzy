@@ -6,21 +6,21 @@ Game Pitch Presentation: https://docs.google.com/presentation/d/1RiOO_XcF798fW0o
 
 
 Beta Release:
-Included an opening scene to make the game feel more complete. (Start menu with a start button)
-Added an instructions screen after opening screen to give the player directions
-Included shaders on wooden counters, on kitchen appliances (Fridge, stove, and etc.), and on the dining room floor to add visual contrast.
-Added a custom shader to food items for a more realistic look
-Added a shader to the tray
-Added a cook character model to the player
-Added mecanim animations for jogging, walking backwards and crouching
-Moved serving tray to front counter (play testers would go to front counter first)
-Implemented an end screen with credits
-Added more appliances/visuals to empty corner
-Fixed slight inconsistencies in walls
-Added a credits scene when game orders hit the limit (currently set at 2)
-Adjust counter height to work with new character model
-Adjusted pick up distance for easier interactions
-Added instructions when in range to pick up item
+- Included an opening scene to make the game feel more complete. (Start menu with a start button)
+- Added an instructions screen after opening screen to give the player directions
+- Included shaders on wooden counters, on kitchen appliances (Fridge, stove, and etc.), and on the dining room floor to add visual contrast.
+- Added a custom shader to food items for a more realistic look
+- Added a shader to the tray
+- Added a cook character model to the player
+- Added mecanim animations for jogging, walking backwards and crouching
+- Moved serving tray to front counter (play testers would go to front counter first)
+- Implemented an end screen with credits
+- Added more appliances/visuals to empty corner
+- Fixed slight inconsistencies in walls
+- Added a credits scene when game orders hit the limit (currently set at 2)
+- Adjust counter height to work with new character model
+- Adjusted pick up distance for easier interactions
+- Added instructions when in range to pick up item
 
 
 
