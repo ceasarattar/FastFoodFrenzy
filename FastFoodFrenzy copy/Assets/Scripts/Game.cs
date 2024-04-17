@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // Required for changing scenes
 using TMPro;
 
 public class Game : MonoBehaviour
@@ -31,13 +32,18 @@ public class Game : MonoBehaviour
 
     private void StartNewOrder()
     {
-        if (orderCount < 6) // Only start a new order if fewer than 2 orders have been completed
+        if (orderCount < 2) // Adjust this number based on how many orders you want the game to have
         {
             orderManager.GenerateRandomOrder();
             UpdateOrderUI();
             ResetTimer();
             ResetRating();
             orderActive = true;
+        }
+        else
+        {
+            // If all orders are completed, transition to the credits scene
+            TransitionToCredits();
         }
     }
 
@@ -75,13 +81,12 @@ public class Game : MonoBehaviour
 
     public void CompleteOrder()
     {
-
         orderActive = false;
         float timeTaken = Time.time - startTime;
         int rating = CalculateRating(timeTaken);
         ratingText.text = $"Rating: {rating} star(s)";
         orderManager.CompleteOrder();
-        
+
         orderCount++; // Increment the number of completed orders
         Tray tray = FindObjectOfType<Tray>(); // Find the Tray object
         if (tray != null)
@@ -89,14 +94,13 @@ public class Game : MonoBehaviour
             tray.ClearItemsOnTray(); // Make sure to clear the tray items
         }
 
-        if (orderCount < 6)
+        if (orderCount >= 2) // Adjust this number based on how many orders you want the game to have
         {
-            Invoke(nameof(StartNewOrder), 3f); // Only invoke StartNewOrder if fewer than 2 orders have been completed
+            TransitionToCredits();
         }
         else
         {
-            // Optionally, add logic here for what happens when the game is over or no more orders are to be started.
-            Debug.Log("All orders completed. Game over.");
+            Invoke(nameof(StartNewOrder), 3f);
         }
     }
 
@@ -107,5 +111,10 @@ public class Game : MonoBehaviour
         if (timeTaken <= 90) return 3;
         if (timeTaken <= 120) return 2;
         return 1; // Default minimal rating
+    }
+
+    private void TransitionToCredits()
+    {
+        SceneManager.LoadScene("CreditScene"); // Make sure this matches the name of your credits scene
     }
 }
