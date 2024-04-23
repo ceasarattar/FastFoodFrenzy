@@ -9,6 +9,8 @@ public class Tray : MonoBehaviour
     private List<GameObject> itemsObjects = new List<GameObject>(); // Track the actual GameObjects on the tray
     public AudioClip placeItemSound;
     private AudioSource audioSource;
+    private Dictionary<string, Vector3> originalPositions = new Dictionary<string, Vector3>();
+
 
     void Start()
     {
@@ -18,6 +20,11 @@ public class Tray : MonoBehaviour
         {
             // Add an AudioSource component if not already attached to the GameObject
             audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        foreach (var item in GameObject.FindGameObjectsWithTag("Pickable"))
+        {
+            originalPositions[item.name] = item.transform.position;
         }
     }
 
@@ -74,8 +81,17 @@ public class Tray : MonoBehaviour
         canAddItems = false; // Prevent adding new items
         foreach (GameObject item in itemsObjects)
         {
-            item.SetActive(false); // Disable the GameObject
-            Destroy(item); // Remove the GameObject from the scene
+            // Instead of destroying the item, reset its position and activate it
+            if (originalPositions.TryGetValue(item.name, out var originalPos))
+            {
+                item.transform.position = originalPos; // Reset position
+                item.SetActive(true); // Re-activate the GameObject
+            }
+            else
+            {
+                // Log error if the original position is not found
+                Debug.LogError("Original position for " + item.name + " not found!");
+            }
         }
         itemsObjects.Clear(); // Clear the list of GameObjects
         itemsOnTray.Clear(); // Clear the set of item names

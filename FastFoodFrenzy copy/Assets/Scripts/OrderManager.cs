@@ -5,7 +5,7 @@ using System.Linq;
 
 public class OrderManager : MonoBehaviour
 {
-    public List<string> possibleOrderItems = new List<string> { "Hotdog", "Cookie", "Pretzel", "Soda Can", "Pizza" };
+    public List<string> possibleOrderItems = new List<string> {"Cookie", "Pretzel", "Soda Bottle", "Pizza", "Cake", "Noodles", "Steak", "Salmon"};
     public List<Order> ordersQueue = new List<Order>();
     public Order currentOrder;
 

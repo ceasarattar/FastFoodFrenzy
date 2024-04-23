@@ -32,7 +32,7 @@ public class Game : MonoBehaviour
 
     private void StartNewOrder()
     {
-        if (orderCount < 2) // Adjust this number based on how many orders you want the game to have
+        if (orderCount < 6) // Adjust this number based on how many orders you want the game to have
         {
             orderManager.GenerateRandomOrder();
             UpdateOrderUI();
@@ -94,7 +94,7 @@ public class Game : MonoBehaviour
             tray.ClearItemsOnTray(); // Make sure to clear the tray items
         }
 
-        if (orderCount >= 2) // Adjust this number based on how many orders you want the game to have
+        if (orderCount >= 6) // Adjust this number based on how many orders you want the game to have
         {
             TransitionToCredits();
         }
