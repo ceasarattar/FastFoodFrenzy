@@ -101,7 +101,7 @@
             }
             else
             {
-                captionText.text = "Press 'E' to pick up"; // Clear the caption when not holding anything
+                captionText.text = ""; // Clear the caption when not holding anything
             }
         }
     }

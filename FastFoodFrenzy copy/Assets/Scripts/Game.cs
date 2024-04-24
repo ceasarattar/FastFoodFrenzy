@@ -5,7 +5,7 @@ using TMPro;
 public class Game : MonoBehaviour
 {
     [Header("Time and UI Settings")]
-    public float timeForOrder = 120f;
+    public float timeForOrder = 90f;
     public TextMeshProUGUI orderText, timerText, ratingText;
 
     public OrderManager orderManager; // Assign in the Inspector
@@ -32,7 +32,7 @@ public class Game : MonoBehaviour
 
     private void StartNewOrder()
     {
-        if (orderCount < 2) // Adjust this number based on how many orders you want the game to have
+        if (orderCount < 6) // Adjust this number based on how many orders you want the game to have
         {
             orderManager.GenerateRandomOrder();
             UpdateOrderUI();
@@ -43,7 +43,8 @@ public class Game : MonoBehaviour
         else
         {
             // If all orders are completed, transition to the credits scene
-            TransitionToCredits();
+            FindObjectOfType<UIManager>().ShowVictoryOverlay();
+            FindObjectOfType<UIManager>().UnlockCursor(); 
         }
     }
 
@@ -55,7 +56,7 @@ public class Game : MonoBehaviour
     private void ResetTimer()
     {
         startTime = Time.time;
-        timerText.text = "Time left: " + timeForOrder.ToString("F2"); // Reset timer text to full duration
+        timerText.text = "Time remaining: " + timeForOrder.ToString("F2"); // Reset timer text to full duration
     }
 
     private void ResetRating()
@@ -70,7 +71,7 @@ public class Game : MonoBehaviour
         float timeLeft = Mathf.Max(timeForOrder - (Time.time - startTime), 0);
         timerText.text = "Time left: " + timeLeft.ToString("F2");
 
-        characterAnimator.SetBool("IsAngry", timeLeft < 100f);
+        characterAnimator.SetBool("IsAngry", timeLeft < 60f);
 
         if (timeLeft <= 0)
         {
@@ -88,15 +89,18 @@ public class Game : MonoBehaviour
         orderManager.CompleteOrder();
 
         orderCount++; // Increment the number of completed orders
+        timeForOrder -= 5f;
+
         Tray tray = FindObjectOfType<Tray>(); // Find the Tray object
         if (tray != null)
         {
             tray.ClearItemsOnTray(); // Make sure to clear the tray items
         }
 
-        if (orderCount >= 2) // Adjust this number based on how many orders you want the game to have
+        if (orderCount >= 6) // Adjust this number based on how many orders you want the game to have
         {
-            TransitionToCredits();
+            FindObjectOfType<UIManager>().ShowVictoryOverlay();
+            FindObjectOfType<UIManager>().UnlockCursor(); 
         }
         else
         {
@@ -106,10 +110,10 @@ public class Game : MonoBehaviour
 
     private int CalculateRating(float timeTaken)
     {
-        if (timeTaken <= 30) return 5;
-        if (timeTaken <= 60) return 4;
-        if (timeTaken <= 90) return 3;
-        if (timeTaken <= 120) return 2;
+        if (timeTaken <= 15) return 5;
+        if (timeTaken <= 30) return 4;
+        if (timeTaken <= 60) return 3;
+        if (timeTaken <= 90) return 2;
         return 1; // Default minimal rating
     }
 
@@ -117,4 +121,6 @@ public class Game : MonoBehaviour
     {
         SceneManager.LoadScene("CreditScene"); // Make sure this matches the name of your credits scene
     }
+   
+    
 }
