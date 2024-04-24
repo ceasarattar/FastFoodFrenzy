@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_fontSize
-      value: 16
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_margin.z
@@ -401,12 +401,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_fontSizeBase
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 740346672509102085, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -435,6 +443,18 @@ PrefabInstance:
     - target: {fileID: 1368737145108031830, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4279655702
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546187401707596357, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546187401707596357, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546187401707596357, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1428
       objectReference: {fileID: 0}
     - target: {fileID: 1546187401707596357, guid: 02b442b45e8efe740925ad44be902b46, type: 3}
       propertyPath: m_AnchoredPosition.x
