@@ -43,7 +43,8 @@ public class Game : MonoBehaviour
         else
         {
             // If all orders are completed, transition to the credits scene
-            TransitionToCredits();
+            FindObjectOfType<UIManager>().ShowVictoryOverlay();
+            FindObjectOfType<UIManager>().UnlockCursor(); 
         }
     }
 
@@ -94,9 +95,10 @@ public class Game : MonoBehaviour
             tray.ClearItemsOnTray(); // Make sure to clear the tray items
         }
 
-        if (orderCount >= 6) // Adjust this number based on how many orders you want the game to have
+        if (orderCount >= 2) // Adjust this number based on how many orders you want the game to have
         {
-            TransitionToCredits();
+            FindObjectOfType<UIManager>().ShowVictoryOverlay();
+            FindObjectOfType<UIManager>().UnlockCursor(); 
         }
         else
         {
@@ -117,4 +119,6 @@ public class Game : MonoBehaviour
     {
         SceneManager.LoadScene("CreditScene"); // Make sure this matches the name of your credits scene
     }
+   
+    
 }
