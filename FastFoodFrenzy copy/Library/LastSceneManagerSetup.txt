@@ -1,17 +1,13 @@
 sceneSetups:
-- path: Assets/build.unity
+- path: Assets/Scenes/StartScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scenes/StartScreen.unity
-  isLoaded: 1
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/Demo.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/CreditScene.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
